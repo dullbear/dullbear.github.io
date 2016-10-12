@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>dullBear</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://dullbear.com/"/>
+  <updated>2016-10-12T12:43:26.367Z</updated>
+  <id>http://dullbear.com/</id>
+  
+  <author>
+    <name>dullBear</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gulp项目构建</title>
+    <link href="http://dullbear.com/2016/10/12/gulp%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/"/>
+    <id>http://dullbear.com/2016/10/12/gulp项目构建/</id>
+    <published>2016-10-12T12:46:52.000Z</published>
+    <updated>2016-10-12T12:43:26.367Z</updated>
+    
+    <content type="html"><![CDATA[<p>从13年开始陆陆续续写博客，期间因为空间、域名、数据库等问题关关停停。最终导致之前的博客全部失踪啦，今天博客在Github安家希望此博客能一直更新下去，记录工作和学习方面的技术点，以大家一起共勉~~~</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从13年开始陆陆续续写博客，期间因为空间、域名、数据库等问题关关停停。最终导致之前的博客全部失踪啦，今天博客在Github安家希望此博客能一直更新下去，记录工作和学习方面的技术点，以大家一起共勉~~~&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="Gulp" scheme="http://dullbear.com/tags/Gulp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown入门指南</title>
+    <link href="http://dullbear.com/2016/10/11/Markdown%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://dullbear.com/2016/10/11/Markdown入门指南/</id>
+    <published>2016-10-11T05:46:52.000Z</published>
+    <updated>2016-10-11T14:48:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Markdown入门指南"><a href="#Markdown入门指南" class="headerlink" title="Markdown入门指南"></a>Markdown入门指南</h1><blockquote>
+<p>Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</p>
+</blockquote>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>标题用<code>#</code>开头，一级到六级标题字体大小从大到小、<code>#</code>号数量和级数一样，与<code>&lt;h1&gt;~&lt;h6&gt;</code>标签同义。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line">#### 四级标题</div><div class="line">##### 五级标题</div><div class="line">###### 六级标题</div></pre></td></tr></table></figure>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>标题用<code>&gt;</code>开头，用处引用一小段别处的句子，与<code>&lt;blockquote&gt;</code>标签同义。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; 标题用`&gt;`开头，用处引用一小段别处的句子。</div></pre></td></tr></table></figure>
+<h2 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h2><p>使某个词为 <em>斜体</em>、<strong>粗体</strong>、<strong><em>粗斜体</em></strong> 来引起注意，与<code>&lt;em&gt;&lt;strong&gt;</code>标签同义。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*斜体*</div><div class="line">**粗体**</div><div class="line">***粗斜体***</div></pre></td></tr></table></figure>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><a href="http://www.dullbear.com" target="_blank" rel="external">dullBear博客</a>,与<code>&lt;a&gt;</code>标签同义。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[dullBear博客](http://www.dullbear.com)</div></pre></td></tr></table></figure>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>与<code>&lt;img&gt;</code>标签同义。<br><img src="http://cdn.sspai.com/attachment/thumbnail/2014/04/15/54b0855cf47d559c8c59e8f503af17d410f70_mw_800_wm_1_wmp_3.jpg" alt="大写的M"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![大写的M](http://cdn.sspai.com/attachment/thumbnail/2014/04/15/54b0855cf47d559c8c59e8f503af17d410f70_mw_800_wm_1_wmp_3.jpg)</div></pre></td></tr></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>与<code>&lt;table&gt;&lt;th&gt;&lt;tr&gt;&lt;td&gt;</code>标签同义。</p>
+<table>
+<thead>
+<tr>
+<th>10月</th>
+<th style="text-align:center">11月</th>
+<th style="text-align:right">12月</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>￥200.00</td>
+<td style="text-align:center">￥200.00</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>￥200.00</td>
+<td style="text-align:center">￥200.00</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>￥200.00</td>
+<td style="text-align:center">￥200.00</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">| 10月          | 11月          | 12月  |</div><div class="line">| ------------- |:-------------:| -----:|</div><div class="line">| ￥200.00      | ￥200.00      | $1600 |</div><div class="line">| ￥200.00      | ￥200.00      |   $12 |</div><div class="line">| ￥200.00      | ￥200.00      |    $1 |</div></pre></td></tr></table></figure>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>与<code>&lt;ol&gt;&lt;li&gt;</code>标签同义。</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 有序列表</div><div class="line">2. 有序列表</div><div class="line">3. 有序列表</div></pre></td></tr></table></figure>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>与<code>&lt;ul&gt;&lt;li&gt;</code>标签同义。</p>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">+ 无序列表       - 无序列表        * 无序列表</div><div class="line">+ 无序列表  或   - 无序列表   或   * 无序列表</div><div class="line">+ 无序列表       - 无序列表        * 无序列表</div></pre></td></tr></table></figure>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>程序够所喜欢的代码块就有很多种,与<code>&lt;code&gt;&lt;pre&gt;</code>标签同义。</p>
+<ol>
+<li><p><code>`` </code>    </p>
+</li>
+<li><p><code>``` ``` </code></p>
+</li>
+<li><p>区块缩进两次， 8 个空格或是 2 个制表符：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ol>
+<h2 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h2><blockquote>
+<p><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a><br><a href="http://sspai.com/25137" target="_blank" rel="external">认识与入门 Markdown</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown入门指南&quot;&gt;&lt;a href=&quot;#Markdown入门指南&quot; class=&quot;headerlink&quot; title=&quot;Markdown入门指南&quot;&gt;&lt;/a&gt;Markdown入门指南&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一种轻量级的「
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="http://dullbear.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人博客在Github安家啦~~~</title>
+    <link href="http://dullbear.com/2016/10/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9C%A8Github%E5%AE%89%E5%AE%B6%E5%95%A6/"/>
+    <id>http://dullbear.com/2016/10/10/个人博客在Github安家啦/</id>
+    <published>2016-10-10T05:46:52.000Z</published>
+    <updated>2016-10-11T14:48:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>从13年开始陆陆续续写博客，期间因为空间、域名、数据库等问题关关停停。最终导致之前的博客全部失踪啦，今天博客在Github安家希望此博客能一直更新下去，记录工作和学习方面的技术点，以大家一起共勉~~~</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从13年开始陆陆续续写博客，期间因为空间、域名、数据库等问题关关停停。最终导致之前的博客全部失踪啦，今天博客在Github安家希望此博客能一直更新下去，记录工作和学习方面的技术点，以大家一起共勉~~~&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
