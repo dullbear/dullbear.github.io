@@ -30,7 +30,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/weather/script/calendar.min.js</loc>
+    <loc>http://dullbear.com/demo/weather/lib/zepto.min.js</loc>
     
     <lastmod>2016-11-08T00:00:00.000Z</lastmod>
     
@@ -58,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/weather/script/index.min.js</loc>
+    <loc>http://dullbear.com/demo/weather/script/calendar.min.js</loc>
     
     <lastmod>2016-11-08T00:00:00.000Z</lastmod>
     
@@ -72,14 +72,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/weather/styles/index.min.css</loc>
-    
-    <lastmod>2016-11-08T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/weather/lib/zepto.min.js</loc>
+    <loc>http://dullbear.com/demo/weather/script/index.min.js</loc>
     
     <lastmod>2016-11-08T00:00:00.000Z</lastmod>
     
@@ -87,6 +80,13 @@
   
   <url>
     <loc>http://dullbear.com/demo/weather/styles/reset.min.css</loc>
+    
+    <lastmod>2016-11-08T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/weather/styles/index.min.css</loc>
     
     <lastmod>2016-11-08T00:00:00.000Z</lastmod>
     
@@ -128,13 +128,6 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/course/list.html</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/course/read.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -143,6 +136,13 @@
   
   <url>
     <loc>http://dullbear.com/demo/course/theme.html</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/dullImgScroll/index.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -170,20 +170,6 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/dullImgShow/index.html</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/dullImgScroll/index.html</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/egg/index.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -191,7 +177,21 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/dullImgShow/index.html</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/lanjuAD/index.html</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/olympic/index.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -212,6 +212,13 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/XRTG_h5/index.html</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/mengxingqiu/footer.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -219,21 +226,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/mengxingqiu/index.html</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/mengxingqiu/search.html</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/olympic/index.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -254,13 +247,6 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/shendun/index.html</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/video/index.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -268,7 +254,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.1.3.0.js</loc>
+    <loc>http://dullbear.com/demo/shendun/index.html</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.egg.1.0.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -282,14 +275,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/XRTG_h5/JS/index.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/XRTG_h5/JS/jquery.mousewheel.min.js</loc>
+    <loc>http://dullbear.com/demo/mengxingqiu/index.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -303,7 +289,21 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/appCache/css/reset.css</loc>
+    <loc>http://dullbear.com/demo/XRTG_h5/JS/index.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/appCache/js/cache.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/XRTG_h5/JS/jquery.mousewheel.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -324,20 +324,6 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/canvas/css/index.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/appCache/js/cache.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/calendar/css/date.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -352,7 +338,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/canvas/css/reset.css</loc>
+    <loc>http://dullbear.com/demo/canvas/css/index.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -360,6 +346,13 @@
   
   <url>
     <loc>http://dullbear.com/demo/calendar/js/date.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/canvas/css/reset.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -401,6 +394,13 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/canvasDemo/js/dullbear.drop-1.0.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/canvasDemo/js/dullbear.drop-1.0.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -415,7 +415,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/canvasDemo/js/dullbear.drop-1.0.min.js</loc>
+    <loc>http://dullbear.com/demo/cookie/js/cookie.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -423,13 +423,6 @@
   
   <url>
     <loc>http://dullbear.com/demo/course/JS/autoScreen.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/cookie/js/cookie.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -450,14 +443,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/course/JS/config.theme.js</loc>
+    <loc>http://dullbear.com/demo/course/JS/config.read.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/course/JS/config.read.js</loc>
+    <loc>http://dullbear.com/demo/course/JS/config.theme.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -492,28 +485,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/course/css/css.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/course/css/reset.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/dullImgShow/css/reset.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/dullImgShow/css/show.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -534,14 +506,28 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/dullImgShow/js/jQuery.dullImgShow.js</loc>
+    <loc>http://dullbear.com/demo/dullImgScroll/js/jQuery.dullImgScroll.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/dullImgScroll/js/jQuery.dullImgScroll.js</loc>
+    <loc>http://dullbear.com/demo/dullImgShow/css/reset.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/dullImgShow/css/show.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/dullImgShow/js/jQuery.dullImgShow.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -555,21 +541,28 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.egg.1.0.js</loc>
+    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.1.3.0.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/weiXinSK/Style/Css/reset.css</loc>
+    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.1.3.0.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.egg.1.0.min.js</loc>
+    <loc>http://dullbear.com/demo/appCache/css/reset.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/weiXinSK/Style/Css/index.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -597,6 +590,13 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.egg.1.0.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/lanjuAD/css/reset.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -618,6 +618,41 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/olympic/js/DD_belatedPNG.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/olympic/js/ScrollPic.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/olympic/css/index.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/olympic/js/scroll_01.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/olympic/js/shareCopy.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/mengxingqiu/JS/autoScreen.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -625,7 +660,21 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/mengxingqiu/Lib/zepto.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/mengxingqiu/JS/autoScreen.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/course/css/css.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -646,56 +695,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/egg/Js/cyjh.act.1.3.0.min.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/mengxingqiu/JS/index.min.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/mengxingqiu/Lib/zepto.min.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/olympic/css/index.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/olympic/js/ScrollPic.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/olympic/js/DD_belatedPNG.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/olympic/js/scroll_01.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/olympic/js/shareCopy.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -723,6 +723,13 @@
   </url>
   
   <url>
+    <loc>http://dullbear.com/demo/rotate/css/index.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dullbear.com/demo/rotate/css/reset.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -744,35 +751,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/shendun/JS/index.min.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/shendun/JS/index.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/rotate/css/index.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/shendun/JS/jquery.mousewheel.min.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/video/api/bdUI.dullVideo.html</loc>
+    <loc>http://dullbear.com/demo/video/css/reset.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -786,14 +765,28 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/video/css/reset.css</loc>
+    <loc>http://dullbear.com/demo/video/js/jQuery.dullVideo.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/video/js/jQuery.dullVideo.js</loc>
+    <loc>http://dullbear.com/demo/shendun/JS/index.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/shendun/JS/jquery.mousewheel.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/shendun/JS/index.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -814,13 +807,6 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/weather/delete/calendar.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/weather/delete/index.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -828,14 +814,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/video/api/src/d__video_js_jQuery.dullVideo.js.html</loc>
+    <loc>http://dullbear.com/demo/weather/delete/calendar.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/XRTG_h5/index.html</loc>
+    <loc>http://dullbear.com/demo/video/api/src/d__video_js_jQuery.dullVideo.js.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -905,7 +891,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/calendar/js/jquery.1.9.1.min.js</loc>
+    <loc>http://dullbear.com/demo/course/detail.html</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/video/api/bdUI.dullVideo.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -919,7 +912,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/course/JS/jquery.1.9.1.min.js</loc>
+    <loc>http://dullbear.com/demo/XRTG_h5/JS/jquery.1.9.1.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/calendar/js/jquery.1.9.1.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -940,7 +940,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/dullImgShow/js/jquery-1.9.1.min.js</loc>
+    <loc>http://dullbear.com/demo/course/JS/jquery.1.9.1.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -954,7 +954,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/egg/Js/jquery-1.9.1.min.js</loc>
+    <loc>http://dullbear.com/demo/dullImgShow/js/jquery-1.9.1.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -962,6 +962,13 @@
   
   <url>
     <loc>http://dullbear.com/demo/lanjuAD/js/jquery-1.9.1.min.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/egg/Js/jquery-1.9.1.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -982,13 +989,6 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/shendun/JS/jquery.1.9.1.min.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/scrollBar/js/jquery-1.7.2.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
@@ -1003,14 +1003,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/course/detail.html</loc>
+    <loc>http://dullbear.com/demo/shendun/JS/jquery.1.9.1.min.js</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/XRTG_h5/JS/jquery.1.9.1.min.js</loc>
+    <loc>http://dullbear.com/demo/course/list.html</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -1024,21 +1024,14 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/XRTG_h5/Style/Css/reset.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/egg/Style/Css/index.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://dullbear.com/demo/XRTG_h5/Style/Css/index.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/XRTG_h5/Style/Css/reset.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -1059,21 +1052,7 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/mengxingqiu/Style/Css/index.css</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/mengxingqiu/Lib/swiper.js</loc>
-    
-    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dullbear.com/demo/shendun/Style/Css/css.css</loc>
+    <loc>http://dullbear.com/demo/egg/Style/Css/index.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -1081,6 +1060,13 @@
   
   <url>
     <loc>http://dullbear.com/demo/mengxingqiu/Style/Css/reset.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/mengxingqiu/Style/Css/index.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
@@ -1101,7 +1087,21 @@
   </url>
   
   <url>
-    <loc>http://dullbear.com/demo/weiXinSK/Style/Css/index.css</loc>
+    <loc>http://dullbear.com/demo/shendun/Style/Css/css.css</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/mengxingqiu/Lib/swiper.js</loc>
+    
+    <lastmod>2016-11-07T00:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dullbear.com/demo/weiXinSK/Style/Css/reset.css</loc>
     
     <lastmod>2016-11-07T00:00:00.000Z</lastmod>
     
