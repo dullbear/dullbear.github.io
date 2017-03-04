@@ -1,0 +1,532 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="dullBear" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#x5C71;&amp;#x897F;&amp;#x5929;&amp;#x6C14;&amp;#x9884;&amp;#x62A5;2016&amp;#x5E74;10&amp;#x6708;12&amp;#x65E5;16&amp;#x5206;&amp;#x949F;&amp;#x524D;&amp;#x53D1;&amp;#x5E03;&amp;#x592A;&amp;#x539F; &amp;#x5176;&amp;#x4ED6;&amp;#x57CE;&amp;#x5E02;25&amp;#xB0;&amp;#x591A;&amp;#x4E91; 290&amp;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="dullBear">
+<meta property="og:url" content="http://dullbear.com/demo/weather/index.html">
+<meta property="og:site_name" content="dullBear">
+<meta property="og:description" content="&amp;#x5C71;&amp;#x897F;&amp;#x5929;&amp;#x6C14;&amp;#x9884;&amp;#x62A5;2016&amp;#x5E74;10&amp;#x6708;12&amp;#x65E5;16&amp;#x5206;&amp;#x949F;&amp;#x524D;&amp;#x53D1;&amp;#x5E03;&amp;#x592A;&amp;#x539F; &amp;#x5176;&amp;#x4ED6;&amp;#x57CE;&amp;#x5E02;25&amp;#xB0;&amp;#x591A;&amp;#x4E91; 290&amp;">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/warning_01.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/duoyun.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:image" content="http://dullbear.com/delete/qing.png">
+<meta property="og:updated_time" content="2016-11-08T00:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="dullBear">
+<meta name="twitter:description" content="&amp;#x5C71;&amp;#x897F;&amp;#x5929;&amp;#x6C14;&amp;#x9884;&amp;#x62A5;2016&amp;#x5E74;10&amp;#x6708;12&amp;#x65E5;16&amp;#x5206;&amp;#x949F;&amp;#x524D;&amp;#x53D1;&amp;#x5E03;&amp;#x592A;&amp;#x539F; &amp;#x5176;&amp;#x4ED6;&amp;#x57CE;&amp;#x5E02;25&amp;#xB0;&amp;#x591A;&amp;#x4E91; 290&amp;">
+<meta name="twitter:image" content="http://dullbear.com/delete/qing.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '92d223a2b09605f7e9e16e691bb08c14',
+      author: 'dullBear'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://dullbear.com/demo/weather/"/>
+
+
+  <title>
+  
+
+  
+     | dullBear
+  
+</title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">dullBear</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+      <!DOCTYPE html><html><head><meta charset="utf-8"><title>&#x5C71;&#x897F;&#x5929;&#x6C14;&#x9884;&#x62A5;</title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no,email=no"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="Cache-Control" content="no-transform"><!-- 禁止百度转码 --><meta http-equiv="Cache-Control" content="no-siteapp"><script type="text/javascript" src="script/autoScreen.min.js?0.6091926181384859"></script><link rel="stylesheet" type="text/css" href="styles/reset.min.css?0.22630459172876738"><link rel="stylesheet" type="text/css" href="styles/index.min.css?0.3256698752410758"></head><body><div class="wrap"><div class="bg"></div><div class="time"><div class="data" id="data">2016&#x5E74;10&#x6708;12&#x65E5;</div><span class="beforeTime">16&#x5206;&#x949F;&#x524D;&#x53D1;&#x5E03;</span></div><div class="site"><span class="currentSite">&#x592A;&#x539F;</span> <span class="otherSite" id="otherSite">&#x5176;&#x4ED6;&#x57CE;&#x5E02;</span></div><div class="weather"><div class="temperature"><p class="">25&#xB0;</p><em>&#x591A;&#x4E91;</em> <img src="delete/qing.png" alt=""></div><div class="warning"><p class="warning_title"></p><img class="warning_content" src="delete/warning_01.png"></div><div class="air"><p class="airNum">290<i class="air_01 air_icon">&#x826F;&#x597D;</i></p><p class="airList">&#x7A7A;&#x6C14;&#x8D28;&#x91CF;&#x6392;&#x540D;450</p></div></div><div class="video"><div class="video_play"><i id="video_play"></i><p>&#x8BD5;&#x542C;&#x5929;&#x6C14;</p><video src="delete/1.mp4" controls id="video" class="video_src"></video></div><div class="video_text"><p><label>2~3&#x7EA7;&#x897F;&#x5317;&#x98CE;&#xFF1A;</label>&#x98CE;&#x529B;</p><p><label>75%&#xFF1A;</label>&#x6E7F;&#x5EA6;</p></div></div><div class="after_weather clearfix"><div class="tomorrow clearfix"><div class="after_left"><p>&#x660E;&#x5929;<i class="air_01 air_icon">&#x826F;&#x597D;</i></p><p>&#x591A;&#x4E91;&#x8F6C;&#x6674;</p></div><div class="after_right"><p>26/6&#xB0;C</p><img src="delete/duoyun.png" alt=""> <img src="delete/qing.png" alt=""></div></div><div class="after_tomorrow clearfix"><div class="after_left"><p>&#x660E;&#x5929;<i class="air_01 air_icon">&#x826F;&#x597D;</i></p><p>&#x591A;&#x4E91;&#x8F6C;&#x6674;</p></div><div class="after_right"><p>26/6&#xB0;C</p><img src="delete/duoyun.png" alt=""></div></div></div><div class="h24"><h1>24&#x5C0F;&#x65F6;&#x9884;&#x62A5;</h1><div id="wrapper"><div style="width:250%"><ul><li><i>&#x73B0;&#x5728;</i><img src="delete/duoyun.png" alt=""></li><li><i>8&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>9&#x65F6;</i><img src="delete/duoyun.png" alt=""></li><li><i>10&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>&#x73B0;&#x5728;</i><img src="delete/duoyun.png" alt=""></li><li><i>8&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>9&#x65F6;</i><img src="delete/duoyun.png" alt=""></li><li><i>10&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>&#x73B0;&#x5728;</i><img src="delete/duoyun.png" alt=""></li><li><i>8&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>9&#x65F6;</i><img src="delete/duoyun.png" alt=""></li><li><i>10&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>&#x73B0;&#x5728;</i><img src="delete/duoyun.png" alt=""></li><li><i>8&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>9&#x65F6;</i><img src="delete/duoyun.png" alt=""></li><li><i>10&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>&#x73B0;&#x5728;</i><img src="delete/duoyun.png" alt=""></li><li><i>8&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>9&#x65F6;</i><img src="delete/duoyun.png" alt=""></li><li><i>10&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>&#x73B0;&#x5728;</i><img src="delete/duoyun.png" alt=""></li><li><i>8&#x65F6;</i><img src="delete/qing.png" alt=""></li><li><i>9&#x65F6;</i><img src="delete/duoyun.png" alt=""></li><li><i>10&#x65F6;</i><img src="delete/qing.png" alt=""></li></ul><div class="table_01" id="table_01"></div></div></div></div><div class="d15"><h2>14&#x5929;&#x9884;&#x62A5;</h2><div id="wrap"><div style="width:250%"><ul class="d15_top"><li><em>&#x4ECA;&#x5929;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x4E00;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/qing.png" alt=""></li><li><em>&#x5468;&#x4E8C;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x4E09;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/qing.png" alt=""></li><li><em>&#x5468;&#x56DB;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x4E94;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x516D;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/qing.png" alt=""></li><li><em>&#x5468;&#x65E5;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x4E00;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/qing.png" alt=""></li><li><em>&#x5468;&#x4E8C;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x4E09;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/qing.png" alt=""></li><li><em>&#x5468;&#x56DB;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x4E94;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li><li><em>&#x5468;&#x516D;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/qing.png" alt=""></li><li><em>&#x5468;&#x65E5;</em> <i>10/12</i> <b>&#x591A;&#x4E91;</b> <img src="delete/duoyun.png" alt=""></li></ul><div class="table_box"><div class="table_02" id="table_02"></div></div><ul class="d15_bottom"><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_02 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_03 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_04 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_02 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_03 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_04 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li><li><img src="delete/qing.png" alt=""> <b>&#x6674;</b> <i class="air_01 air_icon">&#x826F;&#x597D;</i></li></ul></div></div></div><div class="life_num"><h3>&#x751F;&#x6D3B;&#x6307;&#x6570;</h3><ul class="clearfix"><li class="clearfix"><div class="icon"><i class="icon_url_01"></i><p>&#x7D2B;&#x5916;&#x7EBF;&#x6307;&#x6570;</p></div><div class="life_txt"><h5>&#x4E2D;&#x7B49;</h5><p class="nowp">&#x64E6;&#x6D82;SPF&#x5927;&#x4E8E;15<br>PA+&#x9632;&#x6652;&#x62A4;&#x80A4;&#x54C1;</p></div></li><li class="clearfix"><div class="icon"><i class="icon_url_02"></i><p>&#x7A7F;&#x8863;&#x6307;&#x6570;</p></div><div class="life_txt"><h5>&#x8212;&#x9002;</h5><p>&#x5EFA;&#x8BAE;&#x7A7F;&#x957F;&#x8896;&#x886C;&#x886B;&#x5355;&#x88E4;&#x7B49;&#x670D;&#x88C5;</p></div></li><li class="icon_03 clearfix"><div class="icon"><i class="icon_url_03"></i><p>&#x7A7A;&#x6C14;&#x6C61;&#x67D3;<br>&#x6269;&#x6563;&#x6307;&#x6570;</p></div><div class="life_txt"><h5>&#x4E2D;</h5><p>&#x6613;&#x611F;&#x4EBA;&#x7FA4;&#x5E94;&#x9002;&#x5F53;&#x51CF;&#x5C11;&#x5BA4;&#x5916;&#x6D3B;&#x52A8;</p></div></li><li class="clearfix"><div class="icon"><i class="icon_url_04"></i><p>&#x611F;&#x5192;&#x6307;&#x6570;</p></div><div class="life_txt"><h5>&#x8F83;&#x6613;&#x53D1;</h5><p>&#x5929;&#x6C14;&#x8F83;&#x51C9;&#xFF0C;&#x589E;&#x52A0;&#x8863;&#x670D;&#xFF0C;&#x6CE8;&#x610F;&#x9632;&#x62A4;</p></div></li><li class="clearfix"><div class="icon"><i class="icon_url_05"></i><p>&#x8FD0;&#x52A8;&#x6307;&#x6570;</p></div><div class="life_txt"><h5>&#x8F83;&#x9002;&#x5B9C;</h5><p>&#x8F83;&#x9002;&#x5B9C;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x6237;&#x5916;&#x6D3B;&#x52A8;</p></div></li><li class="clearfix"><div class="icon"><i class="icon_url_06"></i><p>&#x6D17;&#x8F66;&#x6307;&#x6570;</p></div><div class="life_txt"><h5>&#x8F83;&#x9002;&#x5B9C;</h5><p>&#x65E0;&#x96E8;&#x4E14;&#x98CE;&#x529B;&#x8F83;&#x5C0F;&#x6613;&#x4FDD;&#x6301;&#x6E05;&#x6D01;&#x5EA6;</p></div></li></ul></div><div class="footer"><p>&#x9996;&#x5E2D;&#x5929;&#x6C14;</p><a href="http://www.sxtianqi.com" target="_blank" rel="external">www.sxtianqi.com</a></div><div class="search_pup hide" id="search_pup"><div class="search_box"><div class="search_head clearfix"><i class="back" id="back"></i><div class="input_box"><input type="text" placeholder="&#x8F93;&#x5165;&#x5929;&#x6C14;&#x67E5;&#x8BE2;&#x7684;&#x5730;&#x5740;"></div><span class="search_btn">&#x67E5;&#x8BE2;</span></div><div class="search_content"><h6>&#x5C71;&#x897F;&#x4E3B;&#x8981;&#x57CE;&#x5E02;</h6><ul class="clearfix"><li>&#x592A;&#x539F;</li><li>&#x5927;&#x540C;</li><li>&#x6714;&#x5DDE;</li><li>&#x5FFB;&#x5DDE;</li><li>&#x5415;&#x6881;</li><li>&#x9633;&#x6CC9;</li><li>&#x664B;&#x4E2D;</li><li>&#x957F;&#x6CBB;</li><li>&#x664B;&#x57CE;</li><li>&#x4E34;&#x6C7E;</li><li>&#x8FD0;&#x57CE;</li></ul><h6>&#x5168;&#x56FD;&#x4E3B;&#x8981;&#x57CE;&#x5E02;</h6><ul class="clearfix"><li>&#x5317;&#x4EAC;</li><li>&#x4E0A;&#x6D77;</li><li>&#x5E7F;&#x5DDE;</li><li>&#x6DF1;&#x5733;</li><li>&#x676D;&#x5DDE;</li><li>&#x6B66;&#x6C49;</li><li>&#x5357;&#x4EAC;</li><li>&#x6D77;&#x5357;</li><li>&#x53A6;&#x95E8;</li><li>&#x5408;&#x80A5;</li><li>&#x5929;&#x6D25;</li><li>&#x91CD;&#x5E86;</li><li>&#x6D4E;&#x5357;</li><li>&#x6C88;&#x9633;</li><li>&#x6210;&#x90FD;</li></ul></div></div></div></div><script src="lib/zepto.min.js?0.09655472839725054" type="text/javascript" charset="utf-8"></script><script src="lib/iscroll.min.js?0.5616611841155255" type="text/javascript" charset="utf-8"></script><script src="lib/echarts.min.js?0.707782718179266" type="text/javascript" charset="utf-8"></script><script src="script/echarts_index.min.js?0.6596090504090515" type="text/javascript" charset="utf-8"></script><script src="script/calendar.min.js?0.24881759380415858" type="text/javascript" charset="utf-8"></script><script src="script/index.min.js?0.3503503425881189" type="text/javascript" charset="utf-8"></script></body></html>
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="demo/weather/index.html"
+           data-title="" data-url="http://dullbear.com/demo/weather/index.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="dullBear" />
+          <p class="site-author-name" itemprop="name">dullBear</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">dullBear</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dullbear"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{color:#383838;}
+/* rotate */
+	.rotate-pic{-moz-transition: all 1s ease-in-out 0s;
+      -o-transition: all 1s ease-in-out 0s;  
+	  -webkit-transition: all 1s ease-in-out 0s;
+	  transition: all 1s ease-in-out 0s;
+			  
+	  -moz-transform-origin:center center;
+	  -o-transform-origin:center center;
+	  -webkit-transform-origin:center center;
+	  transform-origin:center center;
+	  width:300px;
+	  margin:0 auto;
+	  padding:10px 0;
+	  display: block;}
+.rotate-bg{background: url('../images/rotate-bg.png') repeat;}
+.rotate{position: relative;}
+.rotate-btn{position: absolute;top:50%;left:50%;margin:-71.5px 0 0 -31px;}
+.item{background-color:#fceebe;border-radius: 5px;margin:10px;padding:5px;font: 14px/24px '\5fae\8f6f\96c5\9ed1';}
+.item h2{background:url('../images/rotate_10.jpg') no-repeat;font: 16px/29px '\5fae\8f6f\96c5\9ed1';color:#fff;padding-left: 10px;margin-bottom: 5px; }
+.item ul,.item p{padding-left:10px;}
+.Cf00{color:#f00;}
+.card-item-span{font:16px/28px '\5fae\8f6f\96c5\9ed1';text-align: center;display: block;margin:10px 0;}

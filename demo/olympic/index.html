@@ -1,0 +1,739 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="dullBear" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="我们一起看_伦敦奥运
+
+
+
+
+
+
+
+
+   
+    
+      最快最便捷最精确的奥运赛事
+      随时随地查找奥运资讯
+      实时把握奥运精彩赛况 
+    
+       
+
+
+
+
+  
+    ●轻松查看每日比赛
+    
+    ● 实时了解奥运赛况，精彩赛事一览无余，每时每刻掌握最新奥运赛事。 
+    
+  
+    ● 实时了解赛况，精彩赛事一览无余。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="dullBear">
+<meta property="og:url" content="http://dullbear.com/demo/olympic/index.html">
+<meta property="og:site_name" content="dullBear">
+<meta property="og:description" content="我们一起看_伦敦奥运
+
+
+
+
+
+
+
+
+   
+    
+      最快最便捷最精确的奥运赛事
+      随时随地查找奥运资讯
+      实时把握奥运精彩赛况 
+    
+       
+
+
+
+
+  
+    ●轻松查看每日比赛
+    
+    ● 实时了解奥运赛况，精彩赛事一览无余，每时每刻掌握最新奥运赛事。 
+    
+  
+    ● 实时了解赛况，精彩赛事一览无余。">
+<meta property="og:image" content="http://dullbear.com/images/bg1_02.png">
+<meta property="og:image" content="http://dullbear.com/images/iphone_downloadBtn.png">
+<meta property="og:image" content="http://dullbear.com/images/android_dowmloadBtn.png">
+<meta property="og:image" content="http://dullbear.com/images/date.png">
+<meta property="og:image" content="http://dullbear.com/images/border.jpg">
+<meta property="og:image" content="http://dullbear.com/images/product_pic01.jpg">
+<meta property="og:image" content="http://dullbear.com/images/android_code.jpg">
+<meta property="og:image" content="http://dullbear.com/images/product_pic02.jpg">
+<meta property="og:image" content="http://dullbear.com/images/iphone_code.jpg">
+<meta property="og:image" content="http://dullbear.com/images/btn_left.jpg">
+<meta property="og:image" content="http://dullbear.com/images/macos_01.jpg">
+<meta property="og:image" content="http://dullbear.com/images/macos_02.jpg">
+<meta property="og:image" content="http://dullbear.com/images/btn_right.jpg">
+<meta property="og:image" content="http://dullbear.com/images/btn_left.jpg">
+<meta property="og:image" content="http://dullbear.com/images/ios_01.jpg">
+<meta property="og:image" content="http://dullbear.com/images/ios_02.jpg">
+<meta property="og:image" content="http://dullbear.com/images/ios_03.jpg">
+<meta property="og:image" content="http://dullbear.com/images/btn_right.jpg">
+<meta property="og:image" content="http://dullbear.com/images/atc.png">
+<meta property="og:image" content="http://dullbear.com/images/clickCopy.png">
+<meta property="og:updated_time" content="2016-11-07T00:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="dullBear">
+<meta name="twitter:description" content="我们一起看_伦敦奥运
+
+
+
+
+
+
+
+
+   
+    
+      最快最便捷最精确的奥运赛事
+      随时随地查找奥运资讯
+      实时把握奥运精彩赛况 
+    
+       
+
+
+
+
+  
+    ●轻松查看每日比赛
+    
+    ● 实时了解奥运赛况，精彩赛事一览无余，每时每刻掌握最新奥运赛事。 
+    
+  
+    ● 实时了解赛况，精彩赛事一览无余。">
+<meta name="twitter:image" content="http://dullbear.com/images/bg1_02.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '92d223a2b09605f7e9e16e691bb08c14',
+      author: 'dullBear'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://dullbear.com/demo/olympic/"/>
+
+
+  <title>
+  
+
+  
+     | dullBear
+  
+</title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">dullBear</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+      <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>我们一起看_伦敦奥运</title>
+<meta content="2012伦敦奥运会，手机看伦敦奥运，奥运会，伦敦奥运，我们一起看_伦敦奥运" name="keywords">
+<meta content="我们一起看是福华科州信息科技有限公司倾力打造的项目，项目有买影片，文艺片，看赛事,伦敦奥运会等！" name="description">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<!--[if IE 6]><script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.header, .fR li, .br, .content_bg1, .content_bg2, .con_p1, .con_p2, .con_p3, .footer span ,body,.header .fR,.fR ul,.footer,.fR img');</script><![endif]-->
+</head>
+<body>
+<div class="header">
+  <div class="fR"> <img src="images/bg1_02.png" alt="伦敦奥运应用">
+    <ul>
+      <li>最快最便捷最精确的奥运赛事</li>
+      <li>随时随地查找奥运资讯</li>
+      <li>实时把握奥运精彩赛况 </li>
+    </ul>
+    <span><a href="#"><img src="images/iphone_downloadBtn.png" alt="伦敦奥运iphone应用下载"></a> <a href="#"><img src="images/android_dowmloadBtn.png" alt="伦敦奥运安卓应用下载"></a><a href="#data"><img src="images/date.png" alt="伦敦奥运日历应用"></a> </span> </div>
+</div>
+<div class="br"><img src="images/border.jpg" alt="伦敦奥运宣传页分割线"></div>
+<div class="content_bg1"></div>
+<div class="content">
+  <div class="content_01">
+    <p class="con_p1">●轻松查看每日比赛</p>
+    <img src="images/product_pic01.jpg" alt="伦敦奥运应用展示页">
+    <p class="con_p2">● 实时了解奥运赛况，精彩赛事一览无余，每时每刻掌握最新奥运赛事。 </p>
+    <img src="images/android_code.jpg" alt="奥运安卓应用二维码" class="android_code"></div>
+  <div class="content_02"><img src="images/product_pic02.jpg" alt="伦敦奥运应用展示页">
+    <p class="con_p3">● 实时了解赛况，精彩赛事一览无余。
+      每时每刻掌握最新奥运赛事。实时了解赛况，精彩赛事一览无余。实时了解赛况，精彩赛事一览无余。 </p>
+    <img src="images/iphone_code.jpg" alt="奥运iphone应用二维码" class="iphone_code"> </div>
+  <div class="data" id="data">
+    <h2>日历订阅版：</h2>
+    <ol>
+      <li>1.日历订阅版提供了针对日历日程的简化版赛程，只包括每场比赛的时间、地址。
+      </li><li>
+      </li><li>2.通过设置日历订阅方式，可以实时更新赛程变化情况，该版本提供MacOS、IOS、Google日历三个版，Windows OutLook日历类似方法设置.</li>
+    </ol>
+    <p></p>
+    <div class="data_bg">
+      <ul>
+        <li class="data_li1" id="data_li1" onclick="tab('1')">MacOS</li>
+        <li class="data_li2" id="data_li2" onclick="tab('2')">IOS</li>
+        <li class="data_li2" id="data_li3" onclick="tab('3')">谷歌日历版</li>
+      </ul>
+    </div>
+    <div class="data_c1" id="data_c1">
+      <div class="data_txt data_txtMt_01">
+        <h2>Mac Os 日历版设置步骤</h2>
+        <ol>
+          <li>1、打开iCal日历</li>
+          <li>2、点击菜单日历->订阅</li>
+          <li>3、输入一起看奥运提供的赛程订阅地址：</li>
+          <li>http://2012-subscribe.baidu.cn/olympics/cal.ics</li>
+          <li>4、输入自定义日历标题及其它设置</li>
+          <li>5、查看赛程.</li>
+        </ol>
+      </div>
+      <ul>
+        <li class="btn_left" id="LeftArr_01"><img src="images/btn_left.jpg"></li>
+        <li class="ios">
+          <ul class="featureul" id="ISL_Cont_1_01">
+            <li class="featureBox"><img src="images/macos_01.jpg"> </li>
+            <li class="featureBox"><img src="images/macos_02.jpg"> </li>
+          </ul>
+        </li>
+        <li class="btn_right" id="RightArr_01"><img src="images/btn_right.jpg"></li>
+      </ul>
+    </div>
+    <div class="data_c1 data_c2" id="data_c2" style=" display:none;">
+      <div class="data_txt data_txtMt">
+        <h2>IOS 日历版设置</h2>
+        <ol>
+          <li>1、打开设置->邮件、通讯录、日历->添加账户->其它->添加已订阅的日历</li>
+          <li>2、填入服务器地址:http://2012-subscribe.baidu.cn/olympics/cal.ics</li>
+          <li>3、更改描述为2012奥运赛程，其它项默认，点击存卒储，完成订阅</li>
+          <li>4、打开ios日历即能同步赛程。iPad版操作类似。</li>
+        </ol>
+      </div>
+      <ul>
+        <li class="btn_left" id="LeftArr"><img src="images/btn_left.jpg"></li>
+        <li class="ios">
+          <ul class="featureul" id="ISL_Cont_1">
+            <li class="featureBox"><img src="images/ios_01.jpg"> </li>
+            <li class="featureBox"><img src="images/ios_02.jpg"> </li>
+            <li class="featureBox"><img src="images/ios_03.jpg"></li>
+          </ul>
+        </li>
+        <li class="btn_right" id="RightArr"><img src="images/btn_right.jpg"></li>
+      </ul>
+    </div>
+    <div class="data_c1 data_c2" id="data_c3" style=" display:none;">
+      <div class="data_txt">
+        <h2>google日历</h2>
+        <ol>
+          <li>1、选择其它日历->通过URL添加</li>
+          <li>2、输入订阅地址：http://2012-subscribe.baidu.cn/olympics/cal.ics，完成</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script>
+   function tab(lay){
+      for(i=1;i<=3;i++){
+	      if(lay==i){
+		      document.getElementById("data_li"+i).className="data_li1";
+			  document.getElementById("data_c"+i).style.display="block";
+		  }
+		  else{
+		        document.getElementById("data_li"+i).className="data_li2";
+			  document.getElementById("data_c"+i).style.display="none";
+		  }
+	  }
+   }
+  </script>
+  <div class="content_03">
+    <h2>帮助＆反馈</h2>
+    <p> ● 如果您在使用一起看产品过程中有什么疑惑，请关注一起看奥运，了解更多。 <span>一起看奥运</span><a href="#"><img src="images/atc.png" alt=""></a></p>
+    <p>● 如果您对一起看客户端有任何建议或意见，请反馈给我们，联系方式：<b>aoyun@baidu.cn</b> 非常感谢您对一起看的支持!</p>
+    <p>● 第一次使用奥运日历简化版手机客户端，请点击这里获得<span>更多帮助</span>。</p>
+  </div>
+  <div class="content_04"> 
+    <!-- JiaThis Button BEGIN -->
+    <div id="jiathis_style_32x32">
+      <label>分享到：</label>
+      <!-- Baidu Button BEGIN --> 
+      <a class="jiathis_button_tsina"></a> <a class="jiathis_button_qzone"></a> <a class="jiathis_button_tqq"></a> <a class="jiathis_button_renren"></a> <a class="jiathis_button_kaixin001"></a> <a href="http://www.jiathis.com/share/" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a> <a class="jiathis_counter_style"></a> </div>
+    <div class="share" id="share">
+      <label>分享给QQ/MSN好友：</label>
+      <input type="text" name="txt1" value="http://www.baidu.cn/ 我们一起看奥运吧，可以了解赛况。试试这个APP吧。" id="zxxTestArea">
+      <div id="forLoadSwf"><img src="images/clickCopy.png" alt="伦敦奥运应用推广"></div>
+    </div>
+  </div>
+</div>
+<div class="content_bg2"></div>
+<div class="footer">
+  <p> 有做简单的响应式布局和性能优化，支持android,iphone浏览<br>
+ 
+ </p>
+   </div>
+<!-- share--> 
+<script src="js/shareCopy.js" type="text/javascript"></script> 
+<script type="text/javascript">
+var copyCon = document.getElementById("zxxTestArea").value;
+var flashvars = {
+	content: encodeURIComponent(copyCon),
+	uri: 'images/clickCopy.png'
+};
+var params = {
+	wmode: "transparent",
+	allowScriptAccess: "always"
+};
+swfobject.embedSWF("js/clipboard.swf", "forLoadSwf", "81", "25", "9.0.0", null, flashvars, params);
+
+function copySuccess(){
+	//flash回调
+	alert("复制成功！");
+}
+</script> 
+<!-- JiaThis Button  --> 
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script> 
+<!-- scroll --> 
+<script src="js/ScrollPic.js" type="text/javascript"></script> 
+<script src="js/scroll_01.js" type="text/javascript"></script>
+</body>
+</html>
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="demo/olympic/index.html"
+           data-title="" data-url="http://dullbear.com/demo/olympic/index.html">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="dullBear" />
+          <p class="site-author-name" itemprop="name">dullBear</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">dullBear</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dullbear"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

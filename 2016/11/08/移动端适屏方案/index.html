@@ -1,0 +1,630 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="rem," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="dullBear" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="移动端适屏方案简介
+rem响应式布局，通过使用一个脚本就可以rem自适应，不用再为各种设备宽度不同而烦恼如何实现自适应的问题。
+
+效果图规范效果图大小=手机屏幕大小X手机高清率,字体大小=理想字体X手机高清率。假如已iphone5为设计参考，整体字体大小为12px,那么效果图大小应该为640px，字体大小为36px，个人建议为咯适屏，效果图基于320px3来做设计~~
+JS代码1234567891">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端适屏方案">
+<meta property="og:url" content="http://dullbear.com/2016/11/08/移动端适屏方案/index.html">
+<meta property="og:site_name" content="dullBear">
+<meta property="og:description" content="移动端适屏方案简介
+rem响应式布局，通过使用一个脚本就可以rem自适应，不用再为各种设备宽度不同而烦恼如何实现自适应的问题。
+
+效果图规范效果图大小=手机屏幕大小X手机高清率,字体大小=理想字体X手机高清率。假如已iphone5为设计参考，整体字体大小为12px,那么效果图大小应该为640px，字体大小为36px，个人建议为咯适屏，效果图基于320px3来做设计~~
+JS代码1234567891">
+<meta property="og:updated_time" content="2016-11-08T05:22:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动端适屏方案">
+<meta name="twitter:description" content="移动端适屏方案简介
+rem响应式布局，通过使用一个脚本就可以rem自适应，不用再为各种设备宽度不同而烦恼如何实现自适应的问题。
+
+效果图规范效果图大小=手机屏幕大小X手机高清率,字体大小=理想字体X手机高清率。假如已iphone5为设计参考，整体字体大小为12px,那么效果图大小应该为640px，字体大小为36px，个人建议为咯适屏，效果图基于320px3来做设计~~
+JS代码1234567891">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '92d223a2b09605f7e9e16e691bb08c14',
+      author: 'dullBear'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://dullbear.com/2016/11/08/移动端适屏方案/"/>
+
+
+  <title> 移动端适屏方案 | dullBear </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">dullBear</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                移动端适屏方案
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-08T20:46:52+08:00" content="2016-11-08">
+              2016-11-08
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/08/移动端适屏方案/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/08/移动端适屏方案/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="移动端适屏方案"><a href="#移动端适屏方案" class="headerlink" title="移动端适屏方案"></a>移动端适屏方案</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>rem响应式布局，通过使用一个脚本就可以rem自适应，不用再为各种设备宽度不同而烦恼如何实现自适应的问题。</p>
+</blockquote>
+<h2 id="效果图规范"><a href="#效果图规范" class="headerlink" title="效果图规范"></a>效果图规范</h2><p>效果图大小=手机屏幕大小X手机高清率,字体大小=理想字体X手机高清率。假如已iphone5为设计参考，整体字体大小为12px,那么效果图大小应该为640px，字体大小为36px，个人建议为咯适屏，效果图基于320px3来做设计~~</p>
+<h2 id="JS代码"><a href="#JS代码" class="headerlink" title="JS代码"></a>JS代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div></pre></td><td class="code"><pre><div class="line">&apos;use strict&apos;;</div><div class="line"></div><div class="line">//判断访问终端</div><div class="line">var browser = &#123;</div><div class="line">    versions: function () &#123;</div><div class="line">        var u = navigator.userAgent,</div><div class="line">            app = navigator.appVersion;</div><div class="line">        return &#123;</div><div class="line">            mobile: !!u.match(/AppleWebKit.*Mobile.*/) //是否为移动终端</div><div class="line"></div><div class="line">        &#125;;</div><div class="line">    &#125;(),</div><div class="line">    language: (navigator.browserLanguage || navigator.language).toLowerCase()</div><div class="line">&#125;;</div><div class="line"></div><div class="line">function insertStyle() &#123;</div><div class="line">    var //定义屏幕高清度 </div><div class="line">    dpr = 1,</div><div class="line"></div><div class="line">    //定义缩放比例</div><div class="line">    scale = 1,</div><div class="line"></div><div class="line">    //获取html节点</div><div class="line">    docEl = document.documentElement,</div><div class="line"></div><div class="line">    //创建style</div><div class="line">    fontEl = document.createElement(&apos;style&apos;),</div><div class="line"></div><div class="line">    //查找meta[name=&quot;viewport&quot;]节点</div><div class="line">    metaEl = document.querySelector(&apos;meta[name=&quot;viewport&quot;]&apos;),</div><div class="line">        clientW = 0;</div><div class="line"></div><div class="line">    //获取屏幕高清度（四舍五入）</div><div class="line"></div><div class="line">    dpr = Math.round(window.devicePixelRatio || 1);</div><div class="line"></div><div class="line">    //是否为移动设备</div><div class="line">    if (!browser.versions.mobile) &#123;</div><div class="line">        //否=自定义宽度480px</div><div class="line">        clientW = 480;</div><div class="line">        docEl.style.width = &apos;480px&apos;;</div><div class="line">        docEl.style.margin = &apos;0 auto&apos;;</div><div class="line">    &#125; else &#123;</div><div class="line">        //是=获取屏幕宽度</div><div class="line">        clientW = window.screen.width;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    // 设置viewport，进行缩放，达到高清效果</div><div class="line">    metaEl.setAttribute(&apos;content&apos;, &apos;width=&apos; + scale * clientW + &apos;,initial-scale=&apos; + scale + &apos;,maximum-scale=&apos; + scale + &apos;, minimum-scale=&apos; + scale + &apos;,user-scalable=no&apos;);</div><div class="line"></div><div class="line">    // 设置data-dpr属性，留作的css hack之用</div><div class="line">    docEl.setAttribute(&apos;data-dpr&apos;, dpr);</div><div class="line">    // 动态写入样式</div><div class="line">    docEl.firstElementChild.appendChild(fontEl);</div><div class="line">    fontEl.id = &quot;styleHtml&quot;;</div><div class="line">    fontEl.innerHTML = &apos;html&#123;font-size:&apos; + clientW / 10 + &apos;px!important;&#125;&apos;;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">insertStyle();</div><div class="line"></div><div class="line">//窗口大小改变刷新页面</div><div class="line">window.addEventListener(&quot;resize&quot;, function () &#123;</div><div class="line">    var time;</div><div class="line">    window.clearTimeout(time);</div><div class="line">    time = setTimeout(function () &#123;</div><div class="line">        var tynode = document.getElementById(&quot;styleHtml&quot;);</div><div class="line">        tynode.parentNode.removeChild(tynode);</div><div class="line">        insertStyle();</div><div class="line">    &#125;, 100);</div><div class="line">&#125;, false);</div></pre></td></tr></table></figure>
+<h2 id="SASS代码"><a href="#SASS代码" class="headerlink" title="SASS代码"></a>SASS代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">/* 360为效果图分辨率 */</div><div class="line">$pageWdith:360/10;</div><div class="line"></div><div class="line">/* 效果图应对那种高清屏设计 */</div><div class="line">$devicePixelRatio:3;</div><div class="line"></div><div class="line">/* 效果px转换为适应rem */</div><div class="line">@function rem($px) &#123;</div><div class="line">    @return $px/$pageWdith/$devicePixelRatio*1rem;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 手机高清屏获取不同像素图片 */</div><div class="line">@mixin backgroundSet($picName, $picType:jpg) &#123;</div><div class="line">    background-image: url(../Images/1x/#&#123;$picName&#125;.#&#123;$picType&#125;);</div><div class="line">    background-image: -webkit-image-set(url(../Images/1x/#&#123;$picName&#125;.#&#123;$picType&#125;) 1x, url(../Images/2x/#&#123;$picName&#125;.#&#123;$picType&#125;) 2x, url(../Images/3x/#&#123;$picName&#125;.#&#123;$picType&#125;) 3x, url(../Images/3x/#&#123;$picName&#125;.#&#123;$picType&#125;) 4x);</div><div class="line">    background-image: image-set(url(../Images/1x/#&#123;$picName&#125;.#&#123;$picType&#125;) 1x, url(../Images/1x/#&#123;$picName&#125;.#&#123;$picType&#125;) 2x, url(../Images/3x/#&#123;$picName&#125;.#&#123;$picType&#125;) 3x, url(../Images/3x/#&#123;$picName&#125;.#&#123;$picType&#125;) 4x);</div><div class="line">    background-repeat: no-repeat;</div><div class="line">    background-size: contain;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="http://demo.dullbear.com/demo/weather/" target="_blank" rel="external">DEMO</a><br><a href="https://github.com/dullbear/autoScreen" target="_blank" rel="external">部分源码github地址</a></p>
+</blockquote>
+<h2 id="相关阅读"><a href="#相关阅读" class="headerlink" title="相关阅读"></a>相关阅读</h2><blockquote>
+<p><a href="http://caibaojian.com/flexible-js.html" target="_blank" rel="external">rem自适应布局</a><br><a href="http://www.zhangxinxu.com/wordpress/2015/11/anatomy-of-responsive-images/" target="_blank" rel="external">HTML5响应式图片技术中文图解</a></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/rem/" rel="tag">#rem</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/12/使用gulp构建工具实现前端项目工程化/" rel="next" title="使用gulp构建工具实现前端项目工程化">
+                <i class="fa fa-chevron-left"></i> 使用gulp构建工具实现前端项目工程化
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/08/移动端适屏方案/"
+           data-title="移动端适屏方案" data-url="http://dullbear.com/2016/11/08/移动端适屏方案/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="dullBear" />
+          <p class="site-author-name" itemprop="name">dullBear</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#移动端适屏方案"><span class="nav-number">1.</span> <span class="nav-text">移动端适屏方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果图规范"><span class="nav-number">1.2.</span> <span class="nav-text">效果图规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JS代码"><span class="nav-number">1.3.</span> <span class="nav-text">JS代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SASS代码"><span class="nav-number">1.4.</span> <span class="nav-text">SASS代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关阅读"><span class="nav-number">1.5.</span> <span class="nav-text">相关阅读</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">dullBear</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dullbear"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

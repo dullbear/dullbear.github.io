@@ -1,0 +1,17 @@
+.head{text-align: center;line-height: 200px;font-size: 50px;}
+
+
+/* demo */
+.content{padding:0 70px;}
+.demo h2{font-size: 30px;line-height: 150px;}
+.demo li{float:left;margin-right: 20px;height: 250px;margin-bottom: 20px;}
+.demo li.demoTitle p{background-color: #8cc84c;color:#fff;width:200px;height: 150px;text-align: center;font-size:24px;padding-top: 100px;
+	font-size:14px;font-size:20;}
+.demo .demoTitle p i{display: block;font-size: 16px;font-style: normal;}
+.demo li h5{line-height: 20px;margin-top: 10px;}
+.demo li h5 em{float:left;font-size:16px;}
+.demo li h5 i{float:right;text-align: right;font-style: normal;font-size:14px;color:#0ea2f7;}
+.demo li p{color:#f60;font-size:12px;line-height: 30px;}
+
+
+.footer{text-align: center;line-height: 80px;}

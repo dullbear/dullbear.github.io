@@ -1,0 +1,10 @@
+{
+		"ActState": 0, 
+		"isLogin":true,
+		"prizeInfo": {
+			"isPrize": false,
+			"prizeName": "", 
+			"prizeDescription":"", 
+			"prizeImgSrc": "" 
+		}
+	}
