@@ -6,7 +6,9 @@ function autoWidth() {
 	//获取屏幕宽度
 	clientW = $(window).width();
 
-	if(clientW <= 1024)="" {="" clientw="1024" }="" else="" if(clientw="">= 1920) {
+	if(clientW <= 1024) {
+		clientW = 1024
+	} else if(clientW >= 1920) {
 		clientW = 1920
 	}
 	// 动态写入样式
@@ -39,7 +41,12 @@ function simulate(oDiv, sibli) {
 		showtime;
 
 	var getCurrentEle = function() {
-		/// <summary>获取当前滚动条位置最近的标签= floorCoord[index]) {
+		/// <summary>获取当前滚动条位置最近的标签</summa
+		var Top = $(window).scrollTop(),
+			maxIndex = 0;
+
+		jQuery.each(floorCoord, function(index, el) {
+			if(Top >= floorCoord[index]) {
 				maxIndex = index;
 			}
 		});
@@ -273,7 +280,32 @@ $('#nextBtn').click(function() {
 $('#prevBtn').click(function() {
 	liWidth = $li.outerWidth(true);
 	index -= 1;
-	if(index <= -1)="" {="" index="0;" return="" false;="" }="" scrollimgplay(index);="" });="" $li.click(function()="" $('#pupwrap').removeclass('hide');="" $('#closebtn').click(function()="" $('#pupwrap').addclass('hide');="" var="" $showpicli="$('#showPic" li'),="" showlen="$showPicLi.length," current="0;" function="" showpicplay(current)="" $showpicli.eq(current).fadein(400).siblings('li').fadeout(400);="" };="" $('#nextbtn1').click(function()="" +="1;" if(current="">= showLen) {
+	if(index <= -1) {
+		index = 0;
+		return false;
+	}
+	scrollImgPlay(index);
+});
+
+$li.click(function() {
+	$('#pupwrap').removeClass('hide');
+});
+
+$('#closeBtn').click(function() {
+	$('#pupwrap').addClass('hide');
+});
+
+var $showPicLi = $('#showPic li'),
+	showLen = $showPicLi.length,
+	current = 0;
+
+function showPicPlay(current) {
+	$showPicLi.eq(current).fadeIn(400).siblings('li').fadeOut(400);
+};
+
+$('#nextBtn1').click(function() {
+	current += 1;
+	if(current >= showLen) {
 		current = 0;
 	}
 	showPicPlay(current);
@@ -281,7 +313,21 @@ $('#prevBtn').click(function() {
 
 $('#prevBtn1').click(function() {
 	current -= 1;
-	if(current <= -1)="" {="" current="showLen" -="" 1;="" }="" showpicplay(current);="" });="" var="" movetime,="" movetimenum="0;" function="" aboutheight()="" $aboutmove="$('#aboutMove')," height="$aboutMove.outerHeight(true)" $('.auboutus').outerheight(true);="" window.clearinterval(movetime);="" movetime="setInterval(function()" +="1;" if(movetimenum="">= height) {
+	if(current <= -1) {
+		current = showLen - 1;
+	}
+	showPicPlay(current);
+});
+
+var moveTime, moveTimeNum = 0;
+
+function aboutHeight() {
+	var $aboutMove = $('#aboutMove'),
+		height = $aboutMove.outerHeight(true) - $('.auboutUs').outerHeight(true);
+	window.clearInterval(moveTime);
+	moveTime = setInterval(function() {
+		moveTimeNum += 1;
+		if(moveTimeNum >= height) {
 			moveTimeNum = 0;
 		}
 		$aboutMove.stop().css({
@@ -325,4 +371,4 @@ if(document.all) {
 
 }
 
-document.onselectstart = new Function('event.returnValue=false;');</=></=></summary></=>
+document.onselectstart = new Function('event.returnValue=false;');

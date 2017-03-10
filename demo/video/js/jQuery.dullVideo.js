@@ -381,7 +381,10 @@
 						_self.$audioImg.removeClass('current');
 						var vidPageHei = e.pageY;
 						var cun = vidPageHei - vidOffHei;
-						if (vidPageHei <= vidoffhei="" ||="" cun="" <="0)" {="" _self.$video.volume="1;" }="" else="" if="" (cun="">= _self.vioHei) {
+						if (vidPageHei <= vidOffHei || cun <= 0) {
+							cun = 0;
+							_self.$video.volume = 1;
+						} else if (cun >= _self.vioHei) {
 							cun = _self.vioHei;
 							_self.$video.volume = 0;
 							_self.$audioImg.addClass('current');
@@ -421,4 +424,91 @@
 
 					var offLeft = _self.$prog.offset().left;
 					var ePageX = e.pageX;
-					if (ePageX >= offLeft && ePageX </=>
+					if (ePageX >= offLeft && ePageX <= offLeft + propWid) {
+						var clkWid = (ePageX - offLeft) / propWid * 100 + '%';
+						var mouseTime = (ePageX - offLeft) / propWid * _self.alltime;
+						_self.$showCurrenTime.html(_self.timeFormat(mouseTime));
+
+						_self.$showTime.css({
+							'left': clkWid,
+							'display': 'block'
+						});
+					}
+				}
+			});
+		},
+		/**
+		 * 全屏
+		 * @type function
+		 * @default {}
+		 */
+		fullScreen: function(divObj) {
+			//全屏
+			if (divObj.requestFullscreen) {
+				divObj.requestFullscreen();
+			} else if (divObj.msRequestFullscreen) {
+				divObj.msRequestFullscreen();
+			} else if (divObj.mozRequestFullScreen) {
+				divObj.mozRequestFullScreen();
+			} else if (divObj.webkitRequestFullscreen) {
+				divObj.webkitRequestFullscreen();
+			}
+			this.inFullScreen = true;
+			return;
+		},
+		/**
+		 * 退出全屏
+		 * @type function
+		 * @default {}
+		 */
+		eixtFullScreen: function() {
+
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.msExitFullscreen) {
+				document.msExitFullscreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.webkitCancelFullScreen) {
+				document.webkitCancelFullScreen();
+			}
+			this.inFullScreen = false;
+			return;
+		},
+		/**
+		 * 代码调试
+		 * @type function
+		 * @default {}
+		 */
+		debug: function($message) {
+
+			if (typeof $message == 'undefined') {
+				$message = this;
+			} else if (window.console.log && window.console) {
+				window.console.log($message);
+			} else {
+				alert($message);
+			};
+		},
+		/**
+		 * 回调事件
+		 * @type function
+		 * @default {}
+		 */
+		callback: function(evt) {
+			if (typeof this.options[evt + 'callback'] != 'function') {
+				return false;
+			} else {
+				this.options[evt + 'callback'].call(this);
+			};
+		}
+	}
+
+})(jQuery);
+
+$(".video-box").dullVideo({
+	endcallback: function() {
+		alert('播放完成');
+		//$('#video')[0].play();
+	}
+});

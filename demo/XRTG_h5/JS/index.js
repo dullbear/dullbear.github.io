@@ -9,7 +9,12 @@
 
 
 	var getCurrentEle = function() {
-		/// <summary>获取当前滚动条位置最近的标签= floorCoord[index]) {
+		/// <summary>获取当前滚动条位置最近的标签</summa
+		var Top = $(window).scrollTop(),
+			maxIndex = 0;
+
+		jQuery.each(floorCoord, function(index, el) {
+			if (Top >= floorCoord[index]) {
 				maxIndex = index;
 			}
 		});
@@ -220,4 +225,4 @@
 
 
 
-})();</summary>
+})();

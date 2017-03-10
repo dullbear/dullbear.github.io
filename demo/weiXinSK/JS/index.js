@@ -94,7 +94,14 @@
 	document.addEventListener("touchend", function(e) {
 		console.log(endY);
 		if (endY > 0) {
-			if (index <= 0)="" {="" return="" false;="" }="" index="" -="1;" play(index);="" else="" if="" (endy="" <="" (index="">= len - 1) {
+			if (index <= 0) {
+				return false;
+			}
+			index -= 1;
+			play(index);
+
+		} else if (endY < 0) {
+			if (index >= len - 1) {
 				return false;
 			}
 			index += 1;
@@ -140,4 +147,4 @@
 		}
 	});
 
-})();</=>
+})();

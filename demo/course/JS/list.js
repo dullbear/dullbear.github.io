@@ -9,7 +9,25 @@ var classer = ['math', 'english', 'work', 'read', 'theme'],
 	flag = false;
 
 
-for (var i = 0; i <= classer.length;="" i++)="" {="" if="" (subject="=" classer[i])="" flag="true;" insert(subject,="" classgrade);="" break;="" }="" 返回="" $('#back').attr('href',="" subject="" +="" ".html");="" 标题="" $('#title').html(configdata.title[classgrade="" -="" 1]);="" console.log(window.location.search.split('="));
+for (var i = 0; i <= classer.length; i++) {
+	if (subject == classer[i]) {
+		flag = true;
+		insert(subject, classGrade);
+		break;
+	}
+}
+
+
+
+//返回
+$('#back').attr('href', subject + ".html");
+
+//标题
+$('#title').html(configData.title[classGrade - 1]);
+
+
+
+console.log(window.location.search.split('='));
 
 function insert(subject, classGrade) {
 
@@ -17,7 +35,7 @@ function insert(subject, classGrade) {
 	jQuery.each(article, function(index, value) {
 		//拼接url地址 科目 年纪 课时 图片张数
 		var url = "detail.html?course=" + subject + "=class=" + (classGrade) + "=lesson=" + (index + 1) + "=picNum=" + value.picNum;
-		html += " <li="" data-picnum="' + value.picNum + '"><a href="' + url + '">' + value.name + '</a>';
+		html += '<li data-picnum="' + value.picNum + '"><a href="' + url + '">' + value.name + '</a></li>';
 	});
 	$('#list').html(html);
-}</=>
+}

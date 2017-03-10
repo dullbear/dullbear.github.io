@@ -88,7 +88,13 @@
 		},
 		auto: function() {
 			//滚动按钮置顶时
-			if (this.moveHei <= 0="" 0)="" {="" $scrollporbtn.css('top',="" +="" 'px');="" $scrollbox.css('top',="" this.movehei="0;" }="" 滚动按钮置低时="" else="" if="" (this.movehei="">= this.proHei) {
+			if (this.moveHei <= 0) {
+				$scrollPorBtn.css('top', 0 + 'px');
+				$scrollBox.css('top', 0 + 'px');
+				this.moveHei = 0;
+			} 
+            //滚动按钮置低时
+			else if (this.moveHei >= this.proHei) {
 				$scrollPorBtn.css('top', this.proHei + 'px');
 				$scrollBox.css('top', -this.scrollHei + 'px');
 				this.moveHei = this.proHei;
@@ -111,7 +117,31 @@
 						_self.moveHei -= _self.speed;
 						_self.auto();
 						//滚动到最顶部清除定时器
-						if (_self.moveHei <= 0)="" {="" clearinterval(time);="" }="" },="" 100)="" mouseup:="" function()="" });="" downbtn:="" var="" _self="this," time;="" $scrolldownbtn.bind({="" 'click':="" _self.movehei="" +="_self.speed;" _self.auto();="" 长按向下按钮执行定时器="" mousedown:="" time="setInterval(function()" 滚动到最低部清除定时器="" if="" (_self.movehei="">= _self.proHei) {
+						if (_self.moveHei <= 0) {
+							clearInterval(time);
+						}
+					}, 100)
+				},
+				mouseup: function() {
+					clearInterval(time);
+				}
+			});
+		},
+		downBtn: function() {
+			var _self = this,
+				time;
+			$scrollDownBtn.bind({
+				'click': function() {
+					_self.moveHei += _self.speed;
+					_self.auto();
+				},
+				//长按向下按钮执行定时器
+				mousedown: function() {
+					time = setInterval(function() {
+						_self.moveHei += _self.speed;
+						_self.auto();
+						//滚动到最低部清除定时器
+						if (_self.moveHei >= _self.proHei) {
 							clearInterval(time);
 						}
 					}, 100)
@@ -171,4 +201,4 @@
 
 		}
 	};
-})(jQuery);</=></=>
+})(jQuery);

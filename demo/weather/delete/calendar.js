@@ -454,7 +454,7 @@ var calendar = {
             leap = calendar.leapMonth(y);
             if (!isAdd) {
                 //处理闰月
-                if (leap <= i="" &&="" leap=""> 0) {
+                if (leap <= i && leap > 0) {
                     offset += calendar.leapDays(y);
                     isAdd = true;
                 }
@@ -474,4 +474,4 @@ var calendar = {
 
         return calendar.solar2lunar(cY, cM, cD);
     }
-};</=></=></=></=>
+};

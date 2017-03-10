@@ -7,7 +7,16 @@ var nowTime = new Date(),
 var dateShow = $('#dateShow');
 $('#upMonth').click(function() {
 	Month = parseFloat(Month) - 1;
-	if (Month <= 0)="" {="" month="12;" year="" -="1;" }="" form(year,="" month);="" });="" $('#nextmonth').click(function()="" +="" 1;="" if="" (month=""> 12) {
+	if (Month <= 0) {
+		Month = 12;
+		Year -= 1;
+	}
+	form(Year, Month);
+});
+
+$('#nextMonth').click(function() {
+	Month = parseFloat(Month) + 1;
+	if (Month > 12) {
 		Month = 1;
 		Year += 1;
 	}
@@ -38,7 +47,7 @@ function showTable(year, month) {
 		if (i > 0 && (i + firstDate) % 7 == 0) {
 			html += '</tr><tr>';
 		}
-		html += '<td><span>' + (i + 1) + '<span></span></span></td>';
+		html += '<td><span>' + (i + 1) + '<span></td>';
 	}
 	$('#dataTable').html(html);
 	$('#dateOl').children('li').eq(week).addClass('current').siblings('li').removeClass('current');
@@ -52,4 +61,4 @@ function showTable(year, month) {
 		}
 	});
 };
-form(Year, Month);</tr></=>
+form(Year, Month);

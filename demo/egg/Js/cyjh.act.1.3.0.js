@@ -1,4 +1,4 @@
-/*┏┓　　　┏┓
+﻿/*┏┓　　　┏┓
 ┏┛┻━━━┛┻┓
 ┃　　　　　　　┃    ***** JavaScript Document
 ┃　　　━　　　┃    ***** 宅小歪 活动专题基础类
@@ -15,13 +15,13 @@
     ┗┓┓┏━┳┓┏┛
       ┃┫┫　┃┫┫
       ┗┻┛　┗┻┛    */
-/// <reference path="http://192.168.1.78:8080/VSReference/jquery/jquery.1.9.1.min-vsdoc.js">
-/// <reference path="http://192.168.1.78:8080/VSReference/cyjh/cyjh.1.3.3.js">
+/// <reference path="http://192.168.1.78:8080/VSReference/jquery/jquery.1.9.1.min-vsdoc.js" />
+/// <reference path="http://192.168.1.78:8080/VSReference/cyjh/cyjh.1.3.3.js" />
 (function ($) {
 	/// <summary>
 	/// 活动页
 	/// </summary>
-	/// <param type="jQuery" name="$">jQuery
+	/// <param type="jQuery" name="$">jQuery</param>
 	if (typeof cyjh!=="object") {
 		throw "请先引用cyjh基础库";
 		return;
@@ -33,7 +33,7 @@
 		/// </summary>
 		/// <field type="Boolean" name="_isLogin">(内部属性)是否已登录</field>
 		/// <field type="Object" name="UserState">状态值（调用IsLogin设置的状态值，存储用户名、邮箱等附加信息）</field>
-		/// <field type="Array" elementtype="Function" name="_postState">(内部属性)需要推送登录状态的所有回调方法集合</field>
+		/// <field type="Array" elementType="Function" name="_postState">(内部属性)需要推送登录状态的所有回调方法集合</field>
 		this._isLogin = false;
 		this.UserState = undefined;
 		this._postState = []
@@ -53,21 +53,21 @@
 	var getDataObj = {};
 	var Ajax = function (sessionid, url, method, data, callbackDataType, succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback) {
 		/// <summary>使用Ajax发送Get/Post请求</summary>
-		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求
-		/// <param name="url" type="String">请求的网址
-		/// <param name="method" type="String">请求方式 get / post
-		/// <param name="callbackDataType" type="String">请求的返回值类型 text json html script
-		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}
+		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求</param>
+		/// <param name="url" type="String">请求的网址</param>
+		/// <param name="method" type="String">请求方式 get / post</param>
+		/// <param name="callbackDataType" type="String">请求的返回值类型 text json html script</param>
+		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}</param>
 		/// <param name="succCallback" type="Function">请求正常时引发，以下返回值属于正常：
 		/// &#10; 服务端JSON数据最外层有返回字段ActState并且等于0  -->{"ActState":0}；
 		/// &#10; 服务端JSON数据最外层没有包含字段ActState。
 		///&#10; succCallback(result);
-		///
-		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时
-		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()
-		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)
-		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)
-		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值与callbackDataType格式不匹配等） failedCallback(xhr, errmsg)
+		///</param>
+		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时</param>
+		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()</param>
+		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)</param>
+		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)</param>
+		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值与callbackDataType格式不匹配等） failedCallback(xhr, errmsg)</param>
 		/// <field name="IsDisposed" type="Boolean">是否已被释放</field>
 		if (typeof sessionid !== "string" || sessionid.length === 0) throw "sessionid必须是string (at) " + arguments.callee.caller;
 		if (typeof timeout !== "number") throw "timeout必须是number,不考虑超时请填0 (at) " + arguments.callee.caller;
@@ -88,7 +88,7 @@
 			dataType: callbackDataType,
 			data: data,
 			success: function (result) {
-				/// <param name="result" type="Object" value="{ActState:0}">服务端返回值
+				/// <param name="result" type="Object" value="{ActState:0}">服务端返回值</param>
 				if (cyjh.data.isObject(result) && typeof result.ActState === "number") {
 					switch (result.ActState) {
 						case actStateEnum.NotStart: {
@@ -163,58 +163,58 @@
 	};
 	Act.prototype.GetJSON = function (sessionid, url, data, isCallbackJSON, succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback) {
 		/// <summary>使用Ajax发送Get请求</summary>
-		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求
-		/// <param name="url" type="String">请求的网址
-		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}
-		/// <param name="isCallbackJSON" type="Boolean">返回值是否是json
+		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求</param>
+		/// <param name="url" type="String">请求的网址</param>
+		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}</param>
+		/// <param name="isCallbackJSON" type="Boolean">返回值是否是json</param>
 		/// <param name="succCallback" type="Function">请求正常时引发，以下返回值属于正常：
 		/// &#10; 服务端JSON数据最外层有返回字段ActState并且等于0  -->{"ActState":0}；
 		/// &#10; 服务端JSON数据最外层没有包含字段ActState。
 		///&#10; succCallback(result);
-		///
-		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时
-		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()
-		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)
-		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)
-		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值与isCallbackJSON格式不匹配等） failedCallback(xhr, errmsg)
-		/// <returns type="Ajax">
+		///</param>
+		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时</param>
+		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()</param>
+		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)</param>
+		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)</param>
+		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值与isCallbackJSON格式不匹配等） failedCallback(xhr, errmsg)</param>
+		/// <returns type="Ajax" />
 		return new Ajax(sessionid, url, "get", data, isCallbackJSON ? "json" : "text", succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback);
 	};
 	Act.prototype.PostJSON = function (sessionid, url, data, isCallbackJSON, succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback) {
 		/// <summary>使用Ajax发送Post请求</summary>
-		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求
-		/// <param name="url" type="String">请求的网址
-		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}
-		/// <param name="isCallbackJSON" type="Boolean">返回值是否是json
+		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求</param>
+		/// <param name="url" type="String">请求的网址</param>
+		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}</param>
+		/// <param name="isCallbackJSON" type="Boolean">返回值是否是json</param>
 		/// <param name="succCallback" type="Function">请求正常时引发，以下返回值属于正常：
 		/// &#10; 服务端JSON数据最外层有返回字段ActState并且等于0  -->{"ActState":0}；
 		/// &#10; 服务端JSON数据最外层没有包含字段ActState。
 		///&#10; succCallback(result);
-		///
-		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时
-		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()
-		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)
-		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)
-		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值与isCallbackJSON格式不匹配等） failedCallback(xhr, errmsg)
-		/// <returns type="Ajax">
+		///</param>
+		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时</param>
+		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()</param>
+		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)</param>
+		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)</param>
+		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值与isCallbackJSON格式不匹配等） failedCallback(xhr, errmsg)</param>
+		/// <returns type="Ajax" />
 		return new Ajax(sessionid, url, "post", data, isCallbackJSON ? "json" : "text", succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback);
 	};
 	Act.prototype.GetJSONP = function (sessionid, url, data, succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback) {
 		/// <summary>(不适用Ajax的环境，如跨域)</summary>
-		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求
-		/// <param name="url" type="String">请求的网址
-		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}
+		/// <param name="sessionid" type="String">提交标识，若相同切上一次请求还未结束则会中断上一次请求</param>
+		/// <param name="url" type="String">请求的网址</param>
+		/// <param name="data" type="Object">推送给服务端的数据{"name":"value"}</param>
 		/// <param name="succCallback" type="Function">请求正常时引发，以下返回值属于正常：
 		/// &#10; 服务端JSON数据最外层有返回字段ActState并且等于0  -->{"ActState":0}；
 		/// &#10; 服务端JSON数据最外层没有包含字段ActState。
 		///&#10; succCallback(result);
-		///
-		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时
-		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()
-		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)
-		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)
-		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值异常） failedCallback(xhr, errmsg)
-		/// <returns type="Ajax">
+		///</param>
+		/// <param name="timeout" type="Number" value="1">超时时间（秒），若为0表示不检测超时</param>
+		/// <param name="timeoutCallback" type="Function">请求时间超过timeout秒时引发  timeoutCallback()</param>
+		/// <param name="actNotStartCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于1  -->{"ActState":1} 时引发   actNotStartCallback(result)</param>
+		/// <param name="actExpiredCallback" type="Function">服务端JSON数据最外层有返回字段ActState并且等于2  -->{"ActState":2} 时引发     actExpiredCallback(result)</param>
+		/// <param name="failedCallback" type="Function">请求失败时引发（网络问题、返回值异常） failedCallback(xhr, errmsg)</param>
+		/// <returns type="Ajax" />
 		return new Ajax(sessionid, url, "get", data, "jsonp", succCallback, timeout, timeoutCallback, actNotStartCallback, actExpiredCallback, failedCallback);
 	};
 
@@ -223,13 +223,13 @@
 	Act.prototype.IsLogin = function () {
 		/// <signature>
 		/// <summary>设置登录状态</summary>
-		/// <param name="value" type="Boolean">新的登录状态
-		/// <param name="state" type="Object">状态值（可以任意值，根据需要设置）,将会分发回调到所有AddUserStateHandler的插件
+		/// <param name="value" type="Boolean">新的登录状态</param>
+		/// <param name="state" type="Object">状态值（可以任意值，根据需要设置）,将会分发回调到所有AddUserStateHandler的插件</param>
 		/// </signature>
 		/// <signature>
 		/// <summary>获取当前登录状态</summary>
-		/// <returns type="Boolean">
-		/// </returns></signature>
+		/// <returns type="Boolean" />
+		/// </signature>
 		var len = arguments.length;
 		if ((len === 1 || len === 2) && typeof arguments[0] === "boolean") {
 			var value = arguments[0];
@@ -259,7 +259,7 @@
 	};
 	Act.prototype.AddUserStateHandler = function (callback) {
 		/// <summary>注册监听用户状态变更回调(注册完就会推送一次)</summary>
-		/// <param name="callback" type="Function">回调方法 callback(是否登录Boolean isLogin,状态值Object UserState)
+		/// <param name="callback" type="Function">回调方法 callback(是否登录Boolean isLogin,状态值Object UserState)</param>
 		if (typeof callback !== "function") return;
 		for (var f in this._postState) {
 			if (this._postState[f] === callback) return;//已注册过
@@ -269,7 +269,7 @@
 	};
 	Act.prototype.RemoveUserStateHandler = function (callback) {
 		/// <summary>注销监听用户状态变更回调</summary>
-		/// <returns type="Boolean">
+		/// <returns type="Boolean" />
 		if (typeof callback !== "function") return false;
 		var index = -1;
 		for (var f in this._postState) {
@@ -293,7 +293,7 @@
 	*/
 	var createStyleCss = function (list) {
 		/// <summary>插入样式表</summary>
-		/// <param name="list" type="String[][]">样式列表[["name","value"],["name","value"]]
+		/// <param name="list" type="String[][]">样式列表[["name","value"],["name","value"]]</param>
 		var head = document.getElementsByTagName("head");
 		if (head.length > 0) {
 			head = head[0];
@@ -351,7 +351,7 @@
 			};
 			var getPopBoxNextID = function () {
 				/// <summary>获取弹窗主体自增长id</summary>
-				/// <returns type="String">
+				/// <returns type="String" />
 				return "__PopboxAutoId" + _PopBoxNextID++;
 			};
 			///<var>所有的未关闭的弹窗集合</var>
@@ -374,12 +374,12 @@
 			}
 			var PopBox = function (boxSelector, btnCloseSelector, onCloseCallback, onCloseCallbackState, bgColor, bgOpacity) {
 				/// <summary>弹窗</summary>
-				/// <param name="boxSelector" type="String">弹窗正文的jq筛选器
-				/// <param name="btnCloseSelector" type="String">关闭弹窗的按钮的jq筛选器
-				/// <param name="onCloseCallback" type="Function">按下关闭按钮关闭弹窗后的回调方法（调用.Close不会触发） onCloseCallback(@onCloseCallbackState)
-				/// <param name="onCloseCallbackState" type="Object">onCloseCallback触发时传递的参数
-				/// <param name="bgColor" type="String">弹窗背景遮罩层背景色（#000）
-				/// <param name="bgOpacity" type="Number">遮罩层透明度，0-100
+				/// <param name="boxSelector" type="String">弹窗正文的jq筛选器</param>
+				/// <param name="btnCloseSelector" type="String">关闭弹窗的按钮的jq筛选器</param>
+				/// <param name="onCloseCallback" type="Function">按下关闭按钮关闭弹窗后的回调方法（调用.Close不会触发） onCloseCallback(@onCloseCallbackState)</param>
+				/// <param name="onCloseCallbackState" type="Object">onCloseCallback触发时传递的参数</param>
+				/// <param name="bgColor" type="String">弹窗背景遮罩层背景色（#000）</param>
+				/// <param name="bgOpacity" type="Number">遮罩层透明度，0-100</param>
 				/// <field name="IsClosed" type="Boolean">弹窗是否已经被关闭并释放</field>
 				/// <field name="_popId" type="String">遮罩层id（若有）</field>
 				/// <field name="_box" type="jQuery">boxSelector对应的jq对象</field>
@@ -491,15 +491,15 @@
 			};
 			Act.prototype.PopBox = function (boxSelector, btnCloseSelector, onCloseCallback, onCloseCallbackState, bgColor, bgOpacity) {
 				/// <summary>弹窗</summary>
-				/// <param name="boxSelector" type="String">弹窗正文的jq筛选器
-				/// <param name="btnCloseSelector" type="String">关闭弹窗的按钮的jq筛选器
-				/// <param name="onCloseCallback" type="Function">按下关闭按钮关闭弹窗后的回调方法（调用.Close不会触发） onCloseCallback(@onCloseCallbackState)
-				/// <param name="onCloseCallbackState" type="Object">onCloseCallback触发时传递的参数
-				/// <param name="bgColor" type="String">弹窗背景遮罩层背景色（#000）
-				/// <param name="bgOpacity" type="Number">遮罩层透明度，0-100
-				///<returns type="PopBox">
+				/// <param name="boxSelector" type="String">弹窗正文的jq筛选器</param>
+				/// <param name="btnCloseSelector" type="String">关闭弹窗的按钮的jq筛选器</param>
+				/// <param name="onCloseCallback" type="Function">按下关闭按钮关闭弹窗后的回调方法（调用.Close不会触发） onCloseCallback(@onCloseCallbackState)</param>
+				/// <param name="onCloseCallbackState" type="Object">onCloseCallback触发时传递的参数</param>
+				/// <param name="bgColor" type="String">弹窗背景遮罩层背景色（#000）</param>
+				/// <param name="bgOpacity" type="Number">遮罩层透明度，0-100</param>
+				///<returns type="PopBox" />
 				return new PopBox(boxSelector, btnCloseSelector, onCloseCallback, onCloseCallbackState, bgColor, bgOpacity);
 			};
 		})();
 	})();
-})(jQuery);</returns></returns></returns></returns></returns></returns></reference></reference>
+})(jQuery);

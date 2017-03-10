@@ -12,7 +12,10 @@ var searchArr = window.location.search.split('='),
 	
 
 function insert() {
-	for (var i = 1; i <= picnum;="" i++)="" {="" 拼接图片url地址="" 科目="" 年级="" 课时="" 图片="" var="" url="subject" +="" "="" class_"="" classer="" lesson_"="" lesson="" pic_"="" i="" ".png";="" html="" '"="">'
+	for (var i = 1; i <= picNum; i++) {
+		//拼接图片url地址 科目 年级 课时 图片
+		var url = subject + "/class_" + classer + "/lesson_" + lesson + "/pic_" + i + ".png";
+		html += '<img src="' + url + '" />'
 	}
 	$('#detail').html(html);
 }
@@ -21,4 +24,4 @@ insert();
 
 $('#back').click(function(){
 	window.history.back();
-});</=>
+});

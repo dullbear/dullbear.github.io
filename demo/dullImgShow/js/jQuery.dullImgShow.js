@@ -189,7 +189,33 @@
 			var _self = this;
 			$(this.options.bigPrev).bind({
 				click: function() {
-					if (_self.cun <= 0)="" {="" return="" false;="" };="" _self.cun="" -="1;" _self._default(_self.cun);="" }="" });="" },="" 缩略图点击="" smallconclick:="" function()="" var="" _self="this;" this.$smallconclick.bind({="" click:="" index="$(this).index();" _self._default(index);="" _self.callback('closed');="" 缩略图下一张="" smallnextbtn:="" this.$smallnextbtn.bind({="" _self.s="" if="" (-_self.s=""> _self.$smallConLen) {
+					if (_self.cun <= 0) {
+						return false;
+					};
+					_self.cun -= 1;
+					_self._default(_self.cun);
+				}
+			});
+		},
+		//缩略图点击
+		smallConClick: function() {
+			var _self = this;
+			this.$smallConClick.bind({
+				click: function() {
+					var index = $(this).index();
+					_self.cun = index;
+					_self._default(index);
+					_self.callback('closed');
+				}
+			});
+		},
+		//缩略图下一张
+		smallNextBtn: function() {
+			var _self = this;
+			this.$smallNextBtn.bind({
+				click: function() {
+					_self.s -= 1;
+					if (-_self.s > _self.$smallConLen) {
 						_self.s = -_self.$smallConLen;
 						return false;
 					};
@@ -237,4 +263,3 @@
 		}
 	};
 })(jQuery);
-</=>

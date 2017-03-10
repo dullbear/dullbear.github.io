@@ -1,7 +1,7 @@
-/// <reference path="http://192.168.1.78:8080/VSReference/jquery/jquery.1.9.1.min-vsdoc.js">
-/// <reference path="http://192.168.1.78:8080/VSReference/cyjh/cyjh.1.3.3.js">
-/// <reference path="http://192.168.1.78:8080/VSReference/cyjh.act/cyjh.act.1.3.0.js">
-/// <reference path="cyjh.act.egg.1.0.js">
+/// <reference path="http://192.168.1.78:8080/VSReference/jquery/jquery.1.9.1.min-vsdoc.js" />
+/// <reference path="http://192.168.1.78:8080/VSReference/cyjh/cyjh.1.3.3.js" />
+/// <reference path="http://192.168.1.78:8080/VSReference/cyjh.act/cyjh.act.1.3.0.js" />
+/// <reference path="cyjh.act.egg.1.0.js" />
 (function() {
 
 	cyjh.actEgg = new cyjh.act.egg('smashEggWrap', 'evtEgg', 3, 'smashEggHammer');
@@ -44,4 +44,4 @@
 		}
 	};
 
-})();</reference></reference></reference></reference>
+})();

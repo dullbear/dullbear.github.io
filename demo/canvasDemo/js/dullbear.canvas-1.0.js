@@ -172,7 +172,11 @@ var drawEvtEumn = {
 		/*drawDropDown: function(x, y) {
 			var len = this.pathData.length;
 
-			if (len <= 0)="" {="" return="" false;="" }="" for="" (var="" i="len" -="" 1;="">= 0; i--) {
+			if (len <= 0) {
+				return false;
+			}
+
+			for (var i = len - 1; i >= 0; i--) {
 				var currentDraw = this.pathData[i];
 				for (var name in currentDraw) {
 					if (name == 'round') {
@@ -263,7 +267,12 @@ var drawEvtEumn = {
 		/*drawDropMove: function(x, y) {
 			var len = this.pathData.length;
 
-			if (len <= 0="" &&="" !this.ispoint)="" {="" return="" false;="" }="" this.drawclear();="" for="" (var="" i="len" -="" 1;="">= 0; i--) {
+			if (len <= 0 && !this.isPoint) {
+				return false;
+			}
+			this.drawClear();
+
+			for (var i = len - 1; i >= 0; i--) {
 				var currentDraw = this.pathData[i];
 				for (var name in currentDraw) {
 					if (name == "drawLine") {
@@ -575,7 +584,19 @@ var drawEvtEumn = {
 			if (this.historyCurrent == -1 && this.colorData.length < this.maxHistoryLength) {
 				this.drawClear();
 				return false;
-			} else if (this.historyCurrent <= -1)="" {="" this.historycurrent="-1;" console.log('没有上一步啦！');="" return="" false;="" }="" this.drawputimagedata(this.historycurrent);="" },="" 下一步="" drawnext:="" function()="" +="1;" if="" (this.historycurrent="">= this.colorData.length) {
+			} else if (this.historyCurrent <= -1) {
+				this.historyCurrent = -1;
+				console.log('没有上一步啦！');
+				return false;
+			}
+
+			this.drawPutImageData(this.historyCurrent);
+
+		},
+		//下一步
+		drawNext: function() {
+			this.historyCurrent += 1;
+			if (this.historyCurrent >= this.colorData.length) {
 				this.historyCurrent = this.colorData.length - 1;
 				console.log('没有下一步啦！');
 				return false;
@@ -613,7 +634,7 @@ var drawEvtEumn = {
 			/*var mycanvas = document.getElementById("myCanvas");
 			var image = mycanvas.toDataURL("image/png");
 			var w = window.open('about:blank', 'image from canvas');
-			w.document.write("<img src="" + image + "" alt="from canvas">");*/
+			w.document.write("<img src='" + image + "' alt='from canvas'/>");*/
 		}
 	};
 })();
@@ -789,4 +810,4 @@ function chooseWeight(dataWeight) {
 		chooseWeight(dataWeight);
 	});
 
-})();</=></=></=>
+})();

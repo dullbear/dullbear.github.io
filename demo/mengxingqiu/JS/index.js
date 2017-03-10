@@ -42,7 +42,10 @@ window.setTimeout(function() {
 
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
-    if (scrollTop <= 0)="" {="" $('#gototop').css('display',="" 'none');="" }="" if="" (scrolltop="">= 100) {       
+    if (scrollTop <= 0) {
+        $('#gotoTop').css('display', 'none');
+    }
+    if (scrollTop >= 100) {       
         $('#gotoTop').css('display', 'block');        
     }
 });
@@ -131,7 +134,7 @@ $('#gotoTop').tap(function() {
 
 
 
-// var html = '<div class="item"><a href="javascript:;" target="_blank" rel="external"><img src="Delete/a1.jpg"></a><p class="itemTitle">小薇烂漫樱の花下</p> <span class="itemIcon">1029</span></div>';
+// var html = '<div class="item"><a href="javascript:;"><img src="Delete/a1.jpg"></a><p class="itemTitle">小薇烂漫樱の花下</p> <span class="itemIcon">1029</span></div>';
 // html = html + html + html + html + html + html;
 
 // // $('#loading').click(function() {
@@ -142,4 +145,4 @@ $('#gotoTop').tap(function() {
 // //         tagItemHeight = tag.find('.item').eq(0).height();
 // //     $('#swiper-container2 .swiper-wrapper').css('height', tagItemLength * tagItemHeight + 'px');
 // //     tag.css('height', tagItemLength * tagItemHeight + 'px');
-// // });</=>
+// // });

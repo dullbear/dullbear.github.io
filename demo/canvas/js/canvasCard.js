@@ -58,4 +58,41 @@ canvasAct.prototype = {
                 j++;
             }
         }
-        if (j 
+        if (j <= this.width * this.height * this.ratio) {
+            this.cxt.fillRect(0, 0, this.width, this.height);
+            this.cxt.fill();
+            this.cxt.globalCompositeOperation = 'destination-out';
+            this.cardOpen();
+        }
+    },
+    cardOpen: function() {
+        console.log('画布刮完回调事件,需要重写');
+    }
+};
+
+var card = new canvasAct('#myCanvas', '110', '28', '#353535', '0.3', '5');
+var canvas = document.querySelector('#myCanvas');
+
+
+//移动端
+canvas.addEventListener('touchstart', function(e) {
+    card.brushStart(e);
+});
+canvas.addEventListener('touchend', function(e) {
+    card.brushEnd(e);
+});
+canvas.addEventListener('touchmove', function(e) {
+    card.brushMove(e);
+});
+
+//pc端
+canvas.addEventListener('mousedown', function(e) {
+    card.brushStart(e);
+});
+window.addEventListener('mouseup', function(e) {
+    card.brushEnd(e);
+});
+canvas.addEventListener('mousemove', function(e) {
+    card.brushMove(e);
+});
+

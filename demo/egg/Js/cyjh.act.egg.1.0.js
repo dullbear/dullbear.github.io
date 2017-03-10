@@ -1,5 +1,5 @@
-/// <reference path="http://192.168.1.78:8080/VSReference/jquery/jquery.1.9.1.min-vsdoc.js">
-/// <reference path="http://192.168.1.78:8080/VSReference/cyjh/cyjh.1.3.3.js">
+/// <reference path="http://192.168.1.78:8080/VSReference/jquery/jquery.1.9.1.min-vsdoc.js" />
+/// <reference path="http://192.168.1.78:8080/VSReference/cyjh/cyjh.1.3.3.js" />
 /**
  * @name cyjh.act.egg
  * @constructor
@@ -43,4 +43,110 @@ var JSCOMPRESS_DEBUG = true;
 				         <i class="smashEggBroken">砸开蛋</i></li>';
 			evtStartHtml = '<li></li>';
 
-			for (var i = 0; i </reference></reference>
+			for (var i = 0; i <= this.length - 1; i++) {
+				endHtml += startHtml;
+				evtEndHtml += evtStartHtml;
+			}
+			this.wrapIdName.append(endHtml);
+			this.evtIdName.append(evtEndHtml);
+
+			//锤子移动
+			this.evtIdName.mouseenter(function(e) {
+				that.smashIdName.css({
+					'display': 'block',
+					'z-index': '98'
+				});
+			}).mouseleave(function() {
+				that.smashIdName.css({
+					'display': 'none',
+					'z-index': '10'
+				});
+			}).mousemove(function(e) {
+				var xParent=$(".smashEggWrap").offset().left;
+				var yParent=$(".smashEggWrap").offset().top;
+
+				that.smashIdName.css({
+				"left":e.pageX -xParent + "px",
+					"top": e.pageY -yParent -40 + "px"
+				});
+			});
+
+			this.evtIdName.children('li').click(function(e) {
+				var index = $(this).index();
+				that.clickAllow(index);
+			});
+		},
+		/**
+		 * @description 回置金蛋、锤子为初始状态
+		 * @type funtion
+		 * @example cyjh.actEgg = new cyjh.act.egg('smashEggWrap', 'evtEgg', 3, 'smashEggHammer');
+		 * cyjh.actEgg.reState();
+		 */
+		reState: function() {
+			this.wrapIdName.children('li').removeClass('eggNoPrize eggHasPrize ');
+			this.smashIdName.removeClass('smashEggHammerClick');
+			this.smashIdName.css({
+				'display': 'block',
+				'z-index': '10'
+			});
+		},
+		/**
+		 * @description 有奖金蛋打开效果
+		 * @type function
+		 * @example cyjh.actEgg = new cyjh.act.egg('smashEggWrap', 'evtEgg', 3, 'smashEggHammer');
+		 * cyjh.actEgg.eggNoPrize(index,function(){console.log('我的事件回调')};
+		 * @param index {number}  那个金蛋执行动作
+		 * @param callBack {function}  金蛋有奖回调事件
+		 */
+		eggHasPrize: function(index, callBack) {
+
+			var that = this,
+				time, time1;
+			this.smashIdName.addClass('smashEggHammerClick');
+			this.wrapIdName.children('li').eq(index).addClass('eggHasPrize');
+			clearTimeout(time);
+			clearTimeout(time1);
+			time = setTimeout(function() {
+				that.smashIdName.css('display', 'none');
+				that = null;
+			}, 300);
+			time1 = setTimeout(function() {
+				callBack();
+				callBack = null;
+			}, 1000);
+		},
+		/**
+		 * @description 无奖金蛋打开效果
+		 * @type function
+		 * @example cyjh.actEgg = new cyjh.act.egg('smashEggWrap', 'evtEgg', 3, 'smashEggHammer');
+		 * cyjh.actEgg.eggNoPrize(index,function(){console.log('我的事件回调')};
+		 * @param index {number}  那个金蛋执行动作
+		 * @param callBack {function} 金蛋无奖回调事件
+		 */
+		eggNoPrize: function(index, callBack) {
+			var that = this,
+				time, time1;
+			this.smashIdName.addClass('smashEggHammerClick');
+			this.wrapIdName.children('li').eq(index).addClass('eggNoPrize');
+			clearTimeout(time);
+			clearTimeout(time1);
+			time = setTimeout(function() {
+				that.smashIdName.css('display', 'none');
+				that = null;
+			}, 300);
+			time1 = setTimeout(function() {
+				callBack();
+				callBack = null;
+			}, 1000);
+
+		},
+		/**
+		 * @description 锤子点击执行条件
+		 * @type function
+		 * @example cyjh.actEgg = new cyjh.act.egg('smashEggWrap', 'evtEgg', 3, 'smashEggHammer');
+		 * cyjh.actEgg.clickAllow(index);
+		 * @param index {number} 哪个金蛋执行打开动画
+		 */
+		clickAllow: function(index) {}
+	};
+})();
